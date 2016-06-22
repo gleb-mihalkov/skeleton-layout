@@ -1,0 +1,27 @@
+{
+  "name": "project_name",
+  "description": "Верстка для проекта project_name.",
+  "main": "gulpfile.js",
+  "authors": [
+    "gleb-mihalkov"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "skeleton"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "promise-polyfill": "https://github.com/taylorhakes/promise-polyfill.git#^5.2.1",
+    "setImmediate": "https://github.com/YuzuJS/setImmediate.git#^1.0.4",
+    "zepto": "^1.1.6",
+    "stylus-reset": "https://github.com/gleb-mihalkov/stylus-reset.git",
+    "stylus-short": "https://github.com/gleb-mihalkov/stylus-short.git"
+  }
+}

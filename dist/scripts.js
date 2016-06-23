@@ -1998,9 +1998,21 @@ window.$ === undefined && (window.$ = Zepto)
   if ($ == null) {
     throw new Error('Zepto is undefined.');
   }
+    /**
+     * Показывает, задан ли атрибут у первого элемента набора.
+     *
+     * @return {boolean} True или false.
+     */
     $.fn.hasAttr = function(name) {
       return this.attr(name) != null;
     };
+  /**
+   * Добавляет или удаляет атрибут и класс disabled у элементов.
+   *
+   * @param  {boolean} value Показывает, следует ли добавить или удалить класс.
+   *                         По-умолчанию равно true.
+   * @return {Zepto}         Текущий набор.
+   */
   $.fn.disabled = function(value) {
     
     if (value == null) {
@@ -2019,10 +2031,22 @@ window.$ === undefined && (window.$ = Zepto)
     return this;
   };
   
+  /**
+   * Показывает, имеет ли первый элемент атрибут disabled.
+   *
+   * @return {boolean} True или false.
+   */
   $.fn.isDisabled = function() {
     return this.hasAttr('disabled');
   };
   
+  /**
+   * Переключает атрибут и класс disabled у элементов.
+   *
+   * @param  {boolean} value Показывает, следует ли добавить или удалить атрибут и класс.
+   *                         По-умолчанию переключает состояние.
+   * @return {booelan}       True, если атриубт у элементов теперь присутствует, иначе false.
+   */
   $.fn.toggleDisabled = function(value) {
   
     if (value == null) {
@@ -2032,6 +2056,13 @@ window.$ === undefined && (window.$ = Zepto)
     this.disabled(value);
     return value;
   };
+  /**
+   * Добавляет или удаляет класс active у элементов.
+   *
+   * @param  {boolean} value Показывает, следует ли добавить или удалить класс.
+   *                         По-умолчанию равно true.
+   * @return {Zepto}         Текущий набор.
+   */
   $.fn.active = function(value) {
   
     if (value == null) {
@@ -2048,10 +2079,22 @@ window.$ === undefined && (window.$ = Zepto)
     return this;
   };
   
+  /**
+   * Показывает, имеет ли первый элемент класс active.
+   *
+   * @return {boolean} True или false.
+   */
   $.fn.isActive = function() {
     return this.hasClass('active');
   };
   
+  /**
+   * Переключает класс active у элементов.
+   *
+   * @param  {boolean} value Показывает, следует ли добавить или удалить класс.
+   *                         По-умолчанию переключает состояние.
+   * @return {booelan}       True, если класс у элементов теперь присутствует, иначе false.
+   */
   $.fn.toggleActive = function(value) {
   
     if (value == null) {
@@ -2061,6 +2104,13 @@ window.$ === undefined && (window.$ = Zepto)
     this.active(value);
     return value;
   };
+  /**
+   * Добавляет или удаляет класс hidden у элементов.
+   *
+   * @param  {boolean} value Показывает, следует ли добавить или удалить класс.
+   *                         По-умолчанию равно true.
+   * @return {Zepto}         Текущий набор.
+   */
   $.fn.hidden = function(value) {
     
     if (value == null) {
@@ -2077,10 +2127,22 @@ window.$ === undefined && (window.$ = Zepto)
     return this;
   };
   
+  /**
+   * Показывает, имеет ли первый элемент класс hidden.
+   *
+   * @return {boolean} True или false.
+   */
   $.fn.isHidden = function() {
     return this.hasClass('hidden');
   };
   
+  /**
+   * Переключает класс hidden у элементов.
+   *
+   * @param  {boolean} value Показывает, следует ли добавить или удалить класс.
+   *                         По-умолчанию переключает состояние.
+   * @return {booelan}       True, если класс у элементов теперь присутствует, иначе false.
+   */
   $.fn.toggleHidden = function(value) {
   
     if (value) {
@@ -2090,6 +2152,11 @@ window.$ === undefined && (window.$ = Zepto)
     this.hidden(value);
     return value;
   };
+  /**
+   * Сериализует данные формы в объект.
+   *
+   * @return {object} Объект.
+   */
   $.fn.serializeObject = function() {
   
     var list = this.serializeArray();

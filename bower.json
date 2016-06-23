@@ -23,6 +23,7 @@
     "zepto": "^1.1.6",
     "stylus-reset": "https://github.com/gleb-mihalkov/stylus-reset.git",
     "stylus-short": "https://github.com/gleb-mihalkov/stylus-short.git",
-    "zepto-common": "https://github.com/gleb-mihalkov/zepto-common.git"
+    "zepto-common": "https://github.com/gleb-mihalkov/zepto-common.git",
+    "zepto-promise": "https://github.com/gleb-mihalkov/zepto-promise.git"
   }
 }

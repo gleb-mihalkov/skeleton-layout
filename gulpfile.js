@@ -58,6 +58,7 @@ process.on("uncaughtException", _error());
 gulp.task('build:css', function(cb) {
   _src('./main.styl', cb)
     .pipe(stylus())
+    .pipe(include())
     .pipe(prefixer({
       browsers: ['last 3 version'],
       cascade: false

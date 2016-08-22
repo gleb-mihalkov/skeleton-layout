@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ $1 ]; then
-  sed "s/project_name/${1}/g" *.* > /dev/null
+  sed -i "s/project_name/${1}/g" *.*
   bower install
   npm install
 else

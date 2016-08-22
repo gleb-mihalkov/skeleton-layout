@@ -1,0 +1,13 @@
+// Блок строки.
+.row
+  
+  &:before, &:after
+    display: table ''
+    clear: both
+    
+  &__item
+    min-height: 100%
+    float: left
+    
+    &--right
+      float: right

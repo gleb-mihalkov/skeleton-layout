@@ -14,6 +14,7 @@ var
   prefixer = require('gulp-autoprefixer'),
   nano = require('gulp-cssnano'),
   
+  templates = require('gulp-html-extend'),
   include = require('gulp-include'),
   uglify = require('gulp-uglify'),
 
@@ -78,7 +79,7 @@ gulp.task('build:js', function(cb) {
 
 gulp.task('build:html', function(cb) {
   _src('./*.html', cb)
-    .pipe(include())
+    .pipe(templates({annotations: true}))
     .pipe(_dst(cb));
 });
 

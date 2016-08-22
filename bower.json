@@ -18,14 +18,9 @@
     "tests"
   ],
   "dependencies": {
-    "promise-polyfill": "https://github.com/taylorhakes/promise-polyfill.git#^5.2.1",
-    "setImmediate": "https://github.com/YuzuJS/setImmediate.git#^1.0.4",
-    "zepto": "^1.1.6",
+    "normalize-css": "https://github.com/necolas/normalize.css.git#^4.2.0",
     "stylus-reset": "https://github.com/gleb-mihalkov/stylus-reset.git",
     "stylus-short": "https://github.com/gleb-mihalkov/stylus-short.git",
-    "zepto-common": "https://github.com/gleb-mihalkov/zepto-common.git",
-    "zepto-promise": "https://github.com/gleb-mihalkov/zepto-promise.git",
-    "normalize-css": "https://github.com/necolas/normalize.css.git#^4.1.1",
-    "stylus-common": "https://github.com/gleb-mihalkov/stylus-common.git"
+    "jquery": "^2"
   }
 }
